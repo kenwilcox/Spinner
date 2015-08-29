@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
   @IBOutlet weak var imageView: UIImageView!
-  //[UIImage animatedImageNamed:@"spinner-" duration:1.0f];
   let spinner = UIImage.animatedImageNamed("spinner-", duration: 1.0)
   var spinning = false
   
