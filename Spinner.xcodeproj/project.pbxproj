@@ -36,6 +36,8 @@
 		BE9706B71B925F3A00651EEA /* SpinnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9706BC1B925F3A00651EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9706BD1B925F3A00651EEA /* SpinnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerTests.swift; sourceTree = "<group>"; };
+		BEEF91D81B926CF3006E9404 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		BEEF91D91B926CF3006E9404 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,8 @@
 		BE9706991B925F3900651EEA = {
 			isa = PBXGroup;
 			children = (
+				BEEF91D81B926CF3006E9404 /* LICENSE.md */,
+				BEEF91D91B926CF3006E9404 /* README.md */,
 				BE9706A41B925F3A00651EEA /* Spinner */,
 				BE9706BA1B925F3A00651EEA /* SpinnerTests */,
 				BE9706A31B925F3A00651EEA /* Products */,
@@ -411,6 +415,7 @@
 				BE9706C31B925F3A00651EEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9706C41B925F3A00651EEA /* Build configuration list for PBXNativeTarget "SpinnerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				BE9706C61B925F3A00651EEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
