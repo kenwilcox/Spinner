@@ -10,9 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  @IBOutlet weak var imageView: UIImageView!
-  let spinner = UIImage.animatedImageNamed("spinner-", duration: 1.0)
-  var spinning = false
+  @IBOutlet weak var spinner: Spinner!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,13 +23,7 @@ class ViewController: UIViewController {
   }
 
   @IBAction func buttonPressed(sender: AnyObject) {
-    if (!spinning) {
-      imageView.image = spinner
-      spinning = true
-    } else {
-      imageView.image = nil
-      spinning = false
-    }
+    spinner.toggleSpinner()
   }
 
 }

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-Qg-yxt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-Qg-yxt" customClass="Spinner" customModule="Spinner" customModuleProvider="target">
                                 <rect key="frame" x="221" y="28" width="159" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="159" id="8cd-hh-AKV"/>
@@ -46,7 +46,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="uBF-Qg-yxt" id="ehS-sd-CFF"/>
+                        <outlet property="spinner" destination="uBF-Qg-yxt" id="rN9-5f-YFT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
