@@ -29,24 +29,42 @@
                                     <constraint firstAttribute="height" constant="30" id="upX-ts-4bj"/>
                                     <constraint firstAttribute="width" constant="46" id="wXW-Ef-zyj"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Toggle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F35-9Z-LV9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="isY-UT-mrm" customClass="Spinner" customModule="Spinner" customModuleProvider="target">
+                                <rect key="frame" x="119" y="187" width="363" height="276"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="276" id="MOe-Hm-lpm"/>
+                                    <constraint firstAttribute="width" constant="276" id="h9j-Ou-9iE"/>
+                                    <constraint firstAttribute="width" constant="363" id="sHT-cq-tdN"/>
+                                    <constraint firstAttribute="height" constant="276" id="waU-Ns-aAS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MOe-Hm-lpm"/>
+                                        <exclude reference="h9j-Ou-9iE"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Tmr-PO-44S" secondAttribute="centerX" id="8vH-KX-7gz"/>
+                            <constraint firstItem="isY-UT-mrm" firstAttribute="top" secondItem="uBF-Qg-yxt" secondAttribute="bottom" constant="46" id="CYr-Ss-a9t"/>
                             <constraint firstItem="uBF-Qg-yxt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JpT-JJ-hES"/>
+                            <constraint firstAttribute="centerX" secondItem="isY-UT-mrm" secondAttribute="centerX" id="Leb-51-d6Y"/>
                             <constraint firstItem="Tmr-PO-44S" firstAttribute="top" secondItem="uBF-Qg-yxt" secondAttribute="bottom" constant="8" id="QJv-LQ-hpV"/>
                             <constraint firstAttribute="centerX" secondItem="uBF-Qg-yxt" secondAttribute="centerX" constant="-0.5" id="jmT-Nd-S0j"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="spinner" destination="uBF-Qg-yxt" id="rN9-5f-YFT"/>
+                        <outlet property="spinner2" destination="isY-UT-mrm" id="GTG-GY-BkA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

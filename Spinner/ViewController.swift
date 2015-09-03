@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
   @IBOutlet weak var spinner: Spinner!
+  @IBOutlet weak var spinner2: Spinner!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
 
   @IBAction func buttonPressed(sender: AnyObject) {
     spinner.toggleSpinner()
+    spinner2.toggleSpinner()
   }
 
 }
