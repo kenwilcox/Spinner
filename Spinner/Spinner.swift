@@ -9,8 +9,9 @@
 import UIKit
 
 public class Spinner: UIImageView {
-  var spinner = UIImage.animatedImageNamed("spinner-", duration: 1.0)
-  var spinning = false
+  private var spinner: UIImage? = nil
+  private var duration: NSTimeInterval = 1.0
+  private var spinning = false
   
   required public init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -32,11 +33,18 @@ public class Spinner: UIImageView {
   }
   
   public func setDuration(duration: NSTimeInterval) {
-    spinner = UIImage.animatedImageNamed("spinner-", duration: duration)
+    if (duration != self.duration) {
+      self.spinner = UIImage.animatedImageNamed("spinner-", duration: duration)
+      self.image = self.spinner
+    }
+    self.duration = duration
   }
   
   public func toggleSpinner() {
     if (!spinning) {
+      if (spinner == nil) {
+        spinner = UIImage.animatedImageNamed("spinner-", duration: duration)
+      }
       self.image = spinner
       spinning = true
     } else {

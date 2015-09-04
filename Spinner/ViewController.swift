@@ -16,7 +16,6 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    spinner2.setDuration(0.5)
   }
 
   override func didReceiveMemoryWarning() {
@@ -25,6 +24,10 @@ class ViewController: UIViewController {
   }
 
   @IBAction func buttonPressed(sender: AnyObject) {
+    spinner2.setDuration(0.5)
+    var duration = NSTimeInterval(arc4random_uniform(100) + 10) / 100
+    println(duration)
+    spinner.setDuration(duration)
     spinner.toggleSpinner()
     spinner2.toggleSpinner()
   }
