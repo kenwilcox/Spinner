@@ -25,8 +25,8 @@ class ViewController: UIViewController {
 
   @IBAction func buttonPressed(sender: AnyObject) {
     spinner2.setDuration(0.5)
-    var duration = NSTimeInterval(arc4random_uniform(100) + 10) / 100
-    println(duration)
+    let duration = NSTimeInterval(arc4random_uniform(100) + 10) / 100
+    print(duration)
     spinner.setDuration(duration)
     spinner.toggleSpinner()
     spinner2.toggleSpinner()

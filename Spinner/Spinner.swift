@@ -13,7 +13,7 @@ public class Spinner: UIImageView {
   private var duration: NSTimeInterval = 1.0
   private var spinning = false
   
-  required public init(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     initialize()
   }
